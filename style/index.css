@@ -1,0 +1,100 @@
+/** HERO **/
+.hero-text{
+  margin: 0;
+}
+
+.hero-text p {
+  padding: 1.25rem 0 1.25rem 0;
+}
+
+.hero--t__text h1,
+.hero--t__text p,
+.hero--t__text {
+  color: white;
+}
+.hero--t__text {
+  background: #000;
+}
+.hero-text p {
+  color: #555;
+}
+.hero--t__text p {
+  color: #888;
+}
+
+
+/** FEATURES **/
+
+
+@media (min-width: 43.9375em) {
+  /** HERO **/
+  .hero-img-mob {
+    display: none;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 13.875rem 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "t2 t2 t1"
+      "m1 m2 m2"
+      "b2 b2 b1";
+  }
+  .hero-text {
+    padding: 8.5rem 3.375rem;
+  }
+
+  .hero--t__img {
+    grid-area: t1;
+    background: url(../assets/home/desktop/create-and-share.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .hero--t__text {
+    grid-area: t2;
+  }
+  .hero--m__img {
+    grid-area: m1;
+    background: url(../assets/home/desktop/beautiful-stories.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .hero--m__text {
+    grid-area: m2;
+  }
+  .hero--b__img {
+    grid-area: b1;
+    background: url("../assets/home/desktop/designed-for-everyone.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .hero--b__text {
+    grid-area: b2;
+  }
+  .hero-text::after{
+    width: 0.3125rem;
+    height:  19rem;
+    top: 25%;
+    left: 0;
+  }
+}
+
+@media (min-width: 70em) {
+  /** HERO **/
+.hero{
+  grid-template-areas: 
+  "t2 t1 t1"
+  "m1 m1 m2"
+  "b2 b1 b1";
+
+}
+.hero-text::after{
+  top: 29%;
+}
+
+  .hero-text {
+    padding: 10.8125rem 10%;
+
+    margin: 0 auto;
+  }
+}

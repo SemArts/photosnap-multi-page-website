@@ -1,0 +1,408 @@
+.cta-container {
+  padding: 4rem 2rem;
+  background: url(../assets/shared/mobile/bg-beta.jpg) no-repeat;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.cta-container::before{
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 2rem;
+  width: 35%;
+  height: 0.375rem;
+  background: linear-gradient(27deg, #FFC593 0%, #BC7198 51.95%, #5A77FF 100%);
+  z-index: 2;
+}
+.cta-container h1 {
+  padding-bottom: 1.5rem;
+  color: #fff;
+
+  line-height: 2.5rem;
+}
+.hero {
+  background: #000;
+  color: white;
+}
+
+/** SWITCH **/
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4.25rem 0;
+}
+
+.option {
+  opacity: 0.5;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  -webkit-appearance: none;
+  outline: none;
+  background: #dfdfdf;
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  margin: 0 2rem;
+}
+
+input:checked[type="checkbox"] {
+  background: #000;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  top: 2px;
+  left: 2.5px;
+  background: #000;
+  transition: 0.5s;
+  transform: scale(0.9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input:checked[type="checkbox"]:before {
+  left: 40px;
+  background: #fff;
+}
+
+/** PRICE **/
+
+.plans {
+  margin: 0 5%;
+display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.plan--price {
+  display: none;
+}
+.active {
+  display: block;
+}
+
+.plan-item {
+  padding: 3rem 2.875rem;
+  background: #f5f5f5;
+  text-align: center;
+
+  
+}
+
+.plan--item__text {
+  margin: 2rem 1rem;
+}
+
+.plan-item h2 {
+  padding-bottom: 1.125rem;
+}
+.plan-item p {
+  opacity: 0.6;
+  padding-bottom: 2.5rem;
+}
+.plan-item-black {
+  background: #000;
+  color: white;
+  position: relative;
+}
+
+.plan-item-black::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.3125rem;
+  background: linear-gradient(27deg, #ffc593 0%, #bc7198 51.95%, #5a77ff 100%);
+  top: 0;
+  left: 0;
+}
+
+.plan-btn {
+  display: block;
+  padding: 0.75rem 0;
+  background: #000;
+  width:100%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.plan-btn__white {
+  background: #fff;
+  color: #000;
+}
+/** TABLE **/
+.table {
+  max-width: 35rem;
+  margin: 0 auto;
+  padding: 4rem 1.75rem;
+}
+.table h1 {
+  display: none;
+}
+table {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.heading-table {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.4375rem;
+  position: relative;
+}
+
+.heading-table::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  background: #000;
+  width: 100%;
+  height: 1px;
+}
+.pricing-cell {
+  display: none;
+  gap: 50px;
+}
+
+.feature--table__name {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.feature--table__name::before {
+  position: absolute;
+}
+
+.feature--table__item {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.feature--table__item::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #dfdfdf;
+  bottom: 0;
+  left: 0;
+}
+
+.feature--table__pricing {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+.feature--table__check {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.feature--table__check > * {
+  width: 16px;
+  height: 12px;
+}
+
+.feature--table__check > *:nth-child(2) {
+  transform: translateX(-19px);
+}
+
+.feature--table__check > *:nth-child(3) {
+  transform: translateX(-50px);
+}
+
+@media (min-width: 43.9375em) {
+  .cta-container {
+    background: url(../assets/shared/tablet/bg-beta.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 4.25rem 2.5rem;
+  }
+
+  .cta-container::before{
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+  }
+
+  .hero {
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .hero-text {
+    width: 60%;
+    margin: 10.8125rem 3.375rem;
+  }
+  .hero-text h1 {
+    padding: 0 0 21px 0;
+  }
+  .hero-description {
+    padding: 0;
+    padding-top: 1.3125rem;
+  }
+  .hero--img__box {
+    background: url(../assets/pricing/tablet/hero.jpg) no-repeat;
+    background-size: cover;
+
+    z-index: 2;
+    width: 40%;
+    height: 100vh;
+  }
+
+  /** PRICE **/
+
+  .plan--item__text{
+    text-align: left;
+    position: relative;
+  }
+
+  .plan--item__text p{
+    width: 40%;
+  }
+  .plan-btn{
+    text-align: center;
+    width: 40%;
+  }
+
+  .plan--price{
+    position: absolute;
+    top: 0;
+    right: 0;
+    white-space: nowrap;
+    text-align: right;
+  }
+
+  .plan--price p{
+    padding: 0;
+    width: 100%;
+  }
+
+  .plan-item-black::after {
+    height: 100%;
+    width: 5px;
+    left: 0;
+  }
+
+  /** TABLE **/
+.table{
+  max-width: 45.6875rem;
+}
+.table h1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3.5rem;
+}
+
+.pricing-cell {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  
+}
+.feature--table__pricing{
+  display: none;
+}
+.feature--table__item{
+  flex-direction: row;
+  justify-content: space-between;
+}
+.feature--table__check{
+  width: 50%;
+}
+
+
+
+}
+@media (min-width: 70em) {
+  .hero {
+    height: 30.625rem;
+  }
+
+  .hero-text {
+    margin : 10.8125rem 6.9375rem;
+    width: 35%;
+  }
+
+  .hero--img__box {
+    background: url(../assets/pricing/desktop/hero.jpg) no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 65%;
+  }
+
+
+  .cta-container {
+    background: url(../assets/shared/desktop/bg-beta.jpg) no-repeat;
+    background-size: cover;
+    padding: 4.25rem 10.3125rem;
+  }
+
+
+
+
+  /** PRICE **/
+
+
+  .plans{
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+  }
+  .plan--price{
+    position: relative;
+    text-align: center;
+    padding-bottom: 2.5rem;
+  }
+  .plan-item{
+   max-width: 21.875rem;
+   min-width: 21rem;
+   padding: 70px 40px;
+  }
+  .plan--item__text{
+    text-align: center;
+    margin: 0;
+  }
+  .plan-btn{
+    width: 100%;
+   
+  }
+  .plan--item__text p{
+    width: 100%;
+  }
+
+  .plan-item-black{
+    padding: 6.25rem 2.5rem;
+  }
+  .plan-item-black::after {
+    height: 5px;
+    width: 100%;
+    left: 0;
+  }
+
+}

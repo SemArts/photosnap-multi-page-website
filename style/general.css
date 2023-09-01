@@ -92,14 +92,6 @@ input::-moz-focus-inner {
 
 
 
-@keyframes burgerAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 /** GENERAL **/
 html {
@@ -147,6 +139,15 @@ span {
 }
 
 /** HEADER **/
+
+@keyframes burgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} 
 .main-open {
   padding-top: 4.5rem;
 }
